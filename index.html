@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form Validation by Rahul S.M</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Contact Us For Help</h2>
+    <form id="contactForm" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <div id="nameError" class="error"></div>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email">
+        <div id="emailError" class="error"></div>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4"></textarea>
+        <div id="messageError" class="error"></div>
+
+        <button type="submit">Submit</button>
+        <div id="successMessage" class="success"></div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
